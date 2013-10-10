@@ -1,8 +1,9 @@
 var connect = Npm.require('connect');
 var path = Npm.require('path');
 
-var basepath = path.resolve('.').split('.meteor')[0];
-var localPath = basepath + ".meteor/local/cfs";
+var bundleRoot = path.join(process.mainModule.filename, '..');
+var rootDir = path.join(bundleRoot, '..') + path.sep;
+var serverPath = path.join(rootDir, 'cfs');
 
 var webPath = "/cfs";
 
@@ -12,6 +13,6 @@ WebApp
 	.connectHandlers
 	.use(
 	 	webPath, 
-		connect.static(localPath)
+		connect.static(serverPath)
 	);
 
