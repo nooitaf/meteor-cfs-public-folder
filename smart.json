@@ -3,7 +3,7 @@
   "description": "Quick insecure dynamic public folder for collectionFS",
   "homepage": "https://github.com/nooitaf/meteor-cfs-public-folder",
   "author": "Ralf Brandenstein (http://nooitaf.nl)",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "git": "https://github.com/nooitaf/meteor-cfs-public-folder.git",
   "packages": {}
 }
